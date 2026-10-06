@@ -1,0 +1,4 @@
+---
+import {site as s} from '../lib/site';
+---
+<header class="nav-slab"><a class="wordmark" href="#inicio" aria-label={`${s.brand}, inicio`}><svg viewBox="0 0 44 44" aria-hidden="true"><path d="M9 7v22a10 10 0 0 0 10 10h19M20 7v18a4 4 0 0 0 4 4h14" fill="none" stroke="currentColor" stroke-width="4"/><circle cx="35" cy="9" r="4"/></svg>{s.brand}</a><span class="nav-description">{s.descriptor}</span><nav class="slab-nav" aria-label="Navegación principal">{s.nav.map(item=><a href={item.href}>{item.label}</a>)}</nav><a class="nav-contact" href="#contacto">Hablemos <span aria-hidden="true">↗</span></a><details class="mobile-menu"><summary>Menú <span aria-hidden="true">+</span></summary><nav aria-label="Navegación móvil">{s.nav.map(item=><a href={item.href}>{item.label}</a>)}<a href="#contacto">Hablemos ↗</a></nav></details></header>

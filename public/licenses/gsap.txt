@@ -1,0 +1,4 @@
+GSAP — GreenSock Animation Platform
+Installed package license metadata: Standard 'no charge' license.
+Official license terms: https://gsap.com/standard-license/
+The package's license field links to these terms; its distribution does not include a standalone LICENSE file.

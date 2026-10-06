@@ -1,0 +1,10 @@
+import {test} from 'node:test';import assert from 'node:assert/strict';import {readFileSync} from 'node:fs';import {siteSchema} from '../src/lib/schema';
+const content=JSON.parse(readFileSync(new URL('../src/content/site.es.json',import.meta.url),'utf8'));
+test('Contenido completo válido',()=>assert.equal(siteSchema.safeParse(content).success,true));
+test('Impide enlaces ajenos a las secciones',()=>{const c=structuredClone(content);c.nav[0].href='javascript:alert(1)';assert.equal(siteSchema.safeParse(c).success,false)});
+test('Rechaza imágenes remotas',()=>{const c=structuredClone(content);c.hero.image='https://example.com/photo.jpg';assert.equal(siteSchema.safeParse(c).success,false)});
+test('Impide prácticas con IDs repetidos',()=>{const c=structuredClone(content);c.practices.items[1].id=c.practices.items[0].id;assert.equal(siteSchema.safeParse(c).success,false)});
+test('Impide HTML en el contenido',()=>{const c=structuredClone(content);c.hero.description='<script>alert(1)</script>';assert.equal(siteSchema.safeParse(c).success,false)});
+test('Rechaza una práctica sin descripción',()=>{const c=structuredClone(content);c.practices.items[0].description='';assert.equal(siteSchema.safeParse(c).success,false)});
+test('Impide ritmos con IDs repetidos',()=>{const c=structuredClone(content);c.rhythms.items[1].id=c.rhythms.items[0].id;assert.equal(siteSchema.safeParse(c).success,false)});
+test('El ritmo solo puede abrir una práctica existente',()=>{const c=structuredClone(content);c.rhythms.items[0].practice='inexistente';assert.equal(siteSchema.safeParse(c).success,false)});

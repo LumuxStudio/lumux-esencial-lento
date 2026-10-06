@@ -1,0 +1,184 @@
+{
+  "version": "1.0.0",
+  "brand": "LENTO",
+  "descriptor": "Estudio de movimiento consciente",
+  "seo": {
+    "title": "LENTO · Muévete. Sin prisa. | Demostración",
+    "description": "Un concepto de estudio de Pilates, movilidad y movimiento consciente. Encuentra una práctica a tu ritmo."
+  },
+  "nav": [
+    {
+      "label": "Prácticas",
+      "href": "#practicas"
+    },
+    {
+      "label": "El estudio",
+      "href": "#estudio"
+    },
+    {
+      "label": "Primera vez",
+      "href": "#primera-vez"
+    }
+  ],
+  "hero": {
+    "lines": [
+      "MUÉVETE.",
+      "SIN PRISA."
+    ],
+    "description": "Pilates, movilidad y espacio para volver a ti. Un movimiento a la vez, a tu propio ritmo.",
+    "cta": "Encuentra tu práctica",
+    "href": "#practicas",
+    "image": "/images/movimiento.webp",
+    "alt": "Personas practicando Pilates en un estudio luminoso. Fotografía de referencia de Gustavo Fring."
+  },
+  "practices": {
+    "title": "Cada cuerpo.\nSu práctica.",
+    "description": "La atención cambia el movimiento. Explora cuatro maneras de empezar y elige la que conecte con tu momento.",
+    "items": [
+      {
+        "id": "pilates",
+        "name": "Pilates esencial",
+        "focus": "Control + precisión",
+        "description": "Una secuencia de movimientos claros para explorar apoyo, coordinación y control. El ritmo deja espacio para entender lo que estás haciendo.",
+        "format": "Suelo y accesorios",
+        "intensity": "Pausada",
+        "choose": "Me interesa Pilates"
+      },
+      {
+        "id": "movilidad",
+        "name": "Movilidad libre",
+        "focus": "Espacio + amplitud",
+        "description": "Un recorrido de movimientos suaves que invita a explorar distintas direcciones. Sin buscar una forma perfecta: con curiosidad por cómo te mueves hoy.",
+        "format": "Suelo y movimiento de pie",
+        "intensity": "Suave",
+        "choose": "Me interesa movilidad"
+      },
+      {
+        "id": "fuerza",
+        "name": "Fuerza consciente",
+        "focus": "Apoyo + energía",
+        "description": "Trabajo de fuerza con tiempos de pausa y opciones de movimiento. Una práctica para encontrar un esfuerzo que puedas sostener con atención.",
+        "format": "Peso corporal y accesorios",
+        "intensity": "Activa",
+        "choose": "Me interesa fuerza"
+      },
+      {
+        "id": "pausa",
+        "name": "Pausa y respiración",
+        "focus": "Escucha + calma",
+        "description": "Una sesión de movimientos pequeños, posiciones de descanso y atención a la respiración. Un espacio para bajar el ritmo y habitar la pausa.",
+        "format": "Suelo y apoyos",
+        "intensity": "Muy suave",
+        "choose": "Me interesa la pausa"
+      }
+    ]
+  },
+  "studio": {
+    "title": [
+      "MENOS RUIDO.",
+      "MÁS CUERPO."
+    ],
+    "description": "Un lugar sencillo para prestar atención. Luz, espacio y una práctica que no necesita competir con nada.",
+    "principles": [
+      {
+        "title": "Escuchar antes de exigir.",
+        "text": "La práctica comienza por reconocer cómo llegas hoy."
+      },
+      {
+        "title": "Una conversación cercana.",
+        "text": "Preguntar, ajustar y encontrar una forma de participar."
+      },
+      {
+        "title": "Dejar espacio a la pausa.",
+        "text": "Moverse y descansar forman parte del mismo recorrido."
+      }
+    ],
+    "image": "/images/practica.webp",
+    "alt": "Una persona realiza un movimiento de Pilates sobre una esterilla. Fotografía ilustrativa de Veronika Rachek."
+  },
+  "first": {
+    "title": "Tu primera vez\npuede ser sencilla.",
+    "intro": "No necesitas conocer los nombres de los ejercicios. Puedes empezar con preguntas.",
+    "items": [
+      {
+        "title": "Antes de llegar",
+        "text": "Elige ropa con la que puedas moverte. En un estudio real se confirmarían contigo el material y los detalles de la sesión."
+      },
+      {
+        "title": "Al comenzar",
+        "text": "Cuéntanos qué esperas de la práctica y qué te gustaría explorar. La conversación forma parte de la experiencia."
+      },
+      {
+        "title": "Durante la práctica",
+        "text": "Escucha las indicaciones, pregunta y toma una pausa cuando la necesites. El ritmo no tiene que ser el mismo para todos."
+      }
+    ]
+  },
+  "rhythms": {
+    "title": "¿Cómo quieres\nmoverte hoy?",
+    "note": "Guía conceptual de prácticas. No muestra horarios, cupos ni sesiones disponibles.",
+    "label": "Elige tu momento",
+    "items": [
+      {
+        "id": "suave",
+        "name": "Bajar el ritmo",
+        "title": "Un espacio para aflojar.",
+        "text": "Movilidad libre + pausa y respiración. Dos formas de explorar un movimiento suave.",
+        "practice": "movilidad",
+        "cta": "Explorar movilidad"
+      },
+      {
+        "id": "enfoque",
+        "name": "Encontrar enfoque",
+        "title": "Atención en cada movimiento.",
+        "text": "Pilates esencial propone una secuencia pausada y clara. Menos prisa, más atención al recorrido.",
+        "practice": "pilates",
+        "cta": "Explorar Pilates"
+      },
+      {
+        "id": "energia",
+        "name": "Activar energía",
+        "title": "Fuerza, con espacio para sentir.",
+        "text": "Fuerza consciente propone un movimiento activo, con pausas y distintas maneras de participar.",
+        "practice": "fuerza",
+        "cta": "Explorar fuerza"
+      }
+    ]
+  },
+  "faq": {
+    "title": "Antes de empezar.",
+    "items": [
+      {
+        "question": "¿Necesito experiencia previa?",
+        "answer": "Puedes comenzar con preguntas y contar qué te gustaría explorar. Cada práctica tiene su propio ritmo; antes de asistir a un estudio se confirma contigo cuál es un buen punto de partida."
+      },
+      {
+        "question": "¿Cómo elijo una práctica?",
+        "answer": "Comienza por el ritmo que buscas hoy. Movilidad libre y pausa proponen movimientos suaves; Pilates esencial se centra en control y precisión; fuerza consciente plantea un recorrido más activo. Revisa también el formato de cada práctica."
+      },
+      {
+        "question": "¿Qué llevo a mi primera clase?",
+        "answer": "Ropa cómoda que te permita moverte. Antes de asistir, confirma con el estudio qué material se necesita y si los accesorios están incluidos."
+      },
+      {
+        "question": "¿Puedo reservar desde aquí?",
+        "answer": "Esta demostración no ofrece reservas ni sesiones disponibles. El formulario solo revisa los campos en tu navegador y no envía información."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Empezamos\npor escucharte.",
+    "intro": "Cuéntanos qué te llama de esta forma de moverte.",
+    "email": "hola@example.com",
+    "note": "Formulario de demostración. No envía ni guarda datos.",
+    "submit": "Revisar mi mensaje",
+    "success": "Mensaje revisado. Esta demostración no lo ha enviado ni ha creado una reserva.",
+    "error": "Revisa los campos indicados.",
+    "loading": "Revisando…"
+  },
+  "footer": {
+    "text": "LENTO es un concepto ficticio de estudio de movimiento. Las prácticas y sus descripciones son ejemplos editoriales. No se ofrecen reservas ni horarios reales.",
+    "credit": "Fotografías: Gustavo Fring y Veronika Rachek / Pexels.",
+    "copyright": "© 2026 LENTO · Demostración Lumux Esencial"
+  }
+}

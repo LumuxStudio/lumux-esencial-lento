@@ -1,0 +1,13 @@
+---
+import {site as s} from '../lib/site';
+---
+<section class="contact-sheet section" id="contacto">
+  <div class="contact-heading"><p class="label">La conversación empieza aquí</p><h2 data-entry="title">{s.contact.title.split('\n').map(line=><span data-entry-fragment>{line}</span>)}</h2><p data-entry="copy">{s.contact.intro}</p></div>
+  <form class="contact-form" novalidate data-success={s.contact.success} data-error={s.contact.error} data-loading={s.contact.loading}>
+    <div class="form-pair"><div class="field"><label for="name">Tu nombre *</label><input id="name" name="name" autocomplete="name" required maxlength="120" aria-describedby="name-error"/><span class="field-error" id="name-error"></span></div><div class="field"><label for="email">Tu correo *</label><input id="email" name="email" type="email" autocomplete="email" required maxlength="254" aria-describedby="email-error"/><span class="field-error" id="email-error"></span></div></div>
+    <div class="field"><label for="interest">¿Qué te gustaría explorar? <span>Opcional</span></label><select id="interest" name="interest"><option value="">Todavía quiero encontrar mi práctica</option>{s.practices.items.map(practice=><option value={practice.id}>{practice.name}</option>)}</select></div>
+    <div class="field"><label for="message">Cuéntanos un poco *</label><textarea id="message" name="message" rows="3" minlength="10" maxlength="1500" required aria-describedby="message-error"></textarea><span class="field-error" id="message-error"></span></div>
+    <div class="form-action"><p class="form-note">{s.contact.note}</p><button class="submit-button" type="submit" disabled>{s.contact.submit}<span aria-hidden="true">↗</span></button></div><p class="form-status" role="status" aria-live="polite"></p><noscript><p class="form-note">La revisión local necesita JavaScript. Esta demostración no realiza envíos.</p></noscript>
+  </form>
+</section>
+<footer class="contact-colophon"><div class="colophon-contact"><span class="label">Correo de ejemplo</span><a href={`mailto:${s.contact.email}`}>{s.contact.email}<span aria-hidden="true">↗</span></a></div><div class="colophon-copy"><p>{s.footer.text}</p><p>{s.footer.credit}</p><p>{s.footer.copyright}</p></div><a class="back-top" href="#inicio">Volver arriba <span aria-hidden="true">↑</span></a></footer>
